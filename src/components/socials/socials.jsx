@@ -1,0 +1,41 @@
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import portfolioData from "../../data/portfolioData";
+
+const Socials = () => {
+  const { socials, name } = portfolioData;
+
+  return (
+    <>
+      <div className="ml-5 sm:ml-10 mt-10 lg:mt-5 flex flex-row justify-center items-center">
+        <a
+          href={socials.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Visit ${name}'s LinkedIn profile`}
+          title="Connect on LinkedIn"
+        >
+          <button className="border border-white/80 px-8 sm:px-12 lg:px-16 py-3 sm:py-4 text-sm sm:text-lg lg:text-xl rounded-[30px] flex items-center hover:bg-white hover:text-black sm:mr-5" aria-hidden="true">
+            <LinkedInIcon className="mr-2" />
+            LinkedIn
+          </button>
+        </a>
+
+        <a
+          href={socials.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Visit ${name}'s GitHub profile`}
+          title="Follow on GitHub"
+        >
+          <button className="border border-white/80 px-8 ml-5 sm:px-12 lg:px-16 py-3 sm:py-4 text-sm sm:text-lg lg:text-xl rounded-[30px] flex items-center hover:bg-white hover:text-black" aria-hidden="true">
+            <GitHubIcon className="mr-2" />
+            GitHub
+          </button>
+        </a>
+      </div>
+    </>
+  );
+};
+
+export default Socials;
