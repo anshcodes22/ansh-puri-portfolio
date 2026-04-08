@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://prableen.co.in/sitemap.xml
