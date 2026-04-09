@@ -1,6 +1,6 @@
 const portfolioData = {
   name: "Ansh Puri",
-  title: "Full Stack Developer",
+  title: "Software Engineer",
   heroDescription:
     "I'm a full-stack developer who loves stacking up clean, maintainable, and understandable code because in the world of devs, bugs are the only thing I do not debug for fun.",
   aboutHeading: "export default About ME...",
